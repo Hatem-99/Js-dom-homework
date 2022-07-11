@@ -1,3 +1,4 @@
+@ -0,0 +1,99 @@
 <!DOCTYPE html>
 <html>
        <html lang="en"></html>
@@ -27,23 +28,36 @@
             border: 0.5px solid black;
             padding: auto;
         }
-        table td span {
-            color: blue;
-
-        }
-
-        .footer{
+        #footer{
             width: 600px;
             margin: auto;
             text-align: center;
+        }
+        .message{
+            margin: auto;
+            height: 20px;
+            width: 20px;
+           
+            
+        }
+        .links{
+            background-color: black;
+        }
+        .visbility{
+            display: none;
         }
 
         </style>
        </head>
        <body>
+        <div class="visbilty">
+
+        </div>
         <div class="name">
             <h1>Apple</h1>
         </div>
+        <button onclick="h1changed()">change the name </button>
+        <button onclick="changBackgroundColor()"> change the background</button>
         <table>
             <tr>
                 <td> MacBook pro 2021</td>
@@ -56,13 +70,27 @@
 
               
             <tr>
-                <td>MacBook Pro, which comes in 16″ and 14″ modelss <span>Price 1599.00$</span></a></p>
-                <td>The sixth-generation iPad Mini (stylized and marketed as iPad mini and colloquially referred to as iPad Mini 6)<span>Price 599.00$</span></td>
-                <td>new 24-inch model with IPS-display and a resolution of 1920 * 1200 ( WUXGA ) <span>Price 1599.00$</span></td>
-                <td>They include support for spatial audio and Dolby Atmos, IPX4 water resistance, skin detection and a case supporting <span>Price 299.00$</span></td>
-                <td>new "Cinematic Mode" at 1080p 30 fps, Apple ProRes video recording, a new A15 Bionic system on a chip, and a variable 10-120 Hz display <span>Price 1299.00$</span></td>
+                <td>MacBook Pro, which comes in 16″ and 14″ modelss </a></p>
+                <td>The sixth-generation iPad Mini (stylized and marketed as iPad mini and colloquially referred to as iPad Mini 6)</td>
+                <td>new 24-inch model with IPS-display and a resolution of 1920 * 1200 ( WUXGA ) </td>
+                <td>They include support for spatial audio and Dolby Atmos, IPX4 water resistance, skin detection and a case supporting </td>
+                <td>new "Cinematic Mode" at 1080p 30 fps, Apple ProRes video recording, a new A15 Bionic system on a chip, and a variable 10-120 Hz display </td>
             </tr>
             <tr>
+                <td>Price 1599.00$</td>
+                <td>Price 599.00$</td>
+                <td>Price 1999.00$</td>
+                <td>Price 299.00$</td>
+                <td>Price 1299.00$</td>
+            </tr>
+            <tr class="imges">
+                <td><img height="120px" src="https://cdn.mos.cms.futurecdn.net/GfinEMFXnT42BFxAcDc2rA-1200-80.jpg" width ="120px", alt="macbook pro"></td>
+                <td> <img height="120px" width="120px" src="https://cdn.wccftech.com/wp-content/uploads/2021/01/iPad-Air-4-2.jpg" alt="ipad mini 6"></td>
+                <td><img height="120px" width="120px" src="https://th.bing.com/th/id/R.4569453590550fcef507b226bfdf793c?rik=xQdZmx6MFTLUqQ&pid=ImgRaw&r=0" alt="imac 24"></td>
+                <td><img height="120px" width="120px" src="https://th.bing.com/th/id/R.6647825e56731e1dfe6da2eda47516ff?rik=IZ0JiLnd0ZNxbA&pid=ImgRaw&r=0" alt="airpods 3"></td>
+                <td><img height="120px" width="120px" src="https://th.bing.com/th/id/R.48896aacf5ea775117148487d23e35e0?rik=O%2f4C6cIAm3y2cA&pid=ImgRaw&r=0" alt="iphone 13"></td>    
+            </tr>
+            <tr class="links">
                 <td><a href="https://www.bing.com/aclk?ld=e8jHTXxWQw7ltEriPsNX2qNjVUCUxWqFXoO6rRoOhO10uZm7VJDnP9kgRPErPMDj1MZw1cG1WJVYajbVGXTMxnCCHSgKmbeyF5kByp80qZpj5H-Tla1uGX4Zg3WophWjMP5hghqyMbu177Is5_bvDK4Snpcq9eDqQ86eZnQ6ir8vIxTAI8fac3KIGv9OY2CqGptvGVPA&u=aHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmRlJTJmQXBwbGUtTWFjQm9vay1Qcm8tQ2hpcC04JTI1RTIlMjU4MCUyNTkxQ29yZS1DUFUtMTQlMjVFMiUyNTgwJTI1OTFDb3JlLUdQVSUyZmRwJTJmQjA5SlFXWlBUUyUyZnJlZiUzZGFzY19kZl9CMDlKUVdaUFRTJTNmdGFnJTNkYmluZ3Nob3BwaW4wYi0yMSUyNmxpbmtDb2RlJTNkZGYwJTI2aHZhZGlkJTNkODA0NzA2MjY5NDU0NDYlMjZodm5ldHclM2RvJTI2aHZxbXQlM2RlJTI2aHZibXQlM2RiZSUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2QlMjZodnRhcmdpZCUzZHBsYS00NTg0MDcwMTU2NDQ4MDk2JTI2cHNjJTNkMQ&rlid=fe5c5bc212631daf4c0a390e3aa55a8c&ntb=1">buy now</a></td>
                 <td><a href="https://www.bing.com/aclk?ld=e86dIvoEZBVrNeITRLm1JN8DVUCUxIF4_ldS4Vs6gLOPbTXT2-dS6OgBx1CvqDZpb672vLpq01Bnfwl-d6CjbN3-_cmLCtzzAnA6HNShQVQm27C-RggffjvnQ6ehY1er7fHOnADBJJBZpQtlAqCy2kmVpGIHyY8geCkE2CnN9oYAEtdQEWJaw_ynWnN0JTg8fK7cQQlw&u=aHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmRlJTJmMjAyMS1BcHBsZS1pUGFkLVdpLUZpLTY0LUdCJTJmZHAlMmZCMDlHOTdIOVc0JTJmcmVmJTNkYXNjX2RmX0IwOUc5N0g5VzQlM2Z0YWclM2RiaW5nc2hvcHBpbjBiLTIxJTI2bGlua0NvZGUlM2RkZjAlMjZodmFkaWQlM2Q4MDY3Njc4NTg4OTA3MCUyNmh2bmV0dyUzZG8lMjZodnFtdCUzZGUlMjZodmJtdCUzZGJlJTI2aHZkZXYlM2RjJTI2aHZsb2NpbnQlM2QlMjZodmxvY3BoeSUzZCUyNmh2dGFyZ2lkJTNkcGxhLTQ1ODQyNzYzMTExODE1MjElMjZwc2MlM2Qx&rlid=2d7ca0fcdadb1e88a1c9c230f0eb6968&ntb=1">buy now</a></td>
                 <td><a href="https://www.bing.com/aclk?ld=e8l7u4Iz5NMXnCW1f_WxFoZzVUCUzpoDGuzTozDjIUNll5gKs3vMjGWbopw0sE0-SbUCTR5hgydMDVusnst8TPH28NliLz7CcL57s8_824oCbu9atXfSQICGRM_nrH96cL9e07_xMWFyZVj4pb76UiaxuSqY6IQQvquxLY4CYcZQySRJzUV1Sq7VeRMTu3EG9jjsX3Dw&u=aHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmRlJTJmQXBwbGUtTTEtQ2hpcC04JTI1RTIlMjU4MCUyNTkxQ29yZS1DUFUtNyUyNUUyJTI1ODAlMjU5MUNvcmUtR1BVLUFuc2NobCUyNUMzJTI1QkNzc2UlMmZkcCUyZkIwOTMzNldHSjQlMmZyZWYlM2Rhc2NfZGZfQjA5MzM2V0dKNCUzZnRhZyUzZGJpbmdzaG9wcGluMGItMjElMjZsaW5rQ29kZSUzZGRmMCUyNmh2YWRpZCUzZDgwMjY0NDY0ODk2NTMxJTI2aHZuZXR3JTNkbyUyNmh2cW10JTNkZSUyNmh2Ym10JTNkYmUlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkJTI2aHZ0YXJnaWQlM2RwbGEtNDU4Mzg2Mzk5MjIwNDIwNSUyNnBzYyUzZDE&rlid=164f4d4647251215a7f42f8a6da1f9ab&ntb=1&ntb=1" >buy now</a></td>    
@@ -70,25 +98,50 @@
                 <td><a href="https://www.bing.com/aclk?ld=e8iYNEqkObbZG2AdHkPcRinzVUCUyhwRdqdD8QcV9sD5HtQIl_wBk74YtHXkkLr6VtvU7oanMpXZceJ3t1-kWdS2OK4DuggavahKg1WDgEbLY0mNigauvRHyUokhvveWDAk__5qaABNyyIo3YEWbgnIcHcXcQxDuFtQR1XkZOZ4s8-YWj3k1e7piQhETNJhtybUn_ZLg&u=aHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmRlJTJmQXBwbGUtaVBob25lLVByby01MTItR0ItU2llcnJhYmxhdSUyZmRwJTJmQjA5RzhZNTJOSyUyZnJlZiUzZGFzY19kZl9CMDlHOFk1Mk5LJTNmdGFnJTNkYmluZ3Nob3BwaW4wYi0yMSUyNmxpbmtDb2RlJTNkZGYwJTI2aHZhZGlkJTNkODAxMjcwMjk4OTE4MDglMjZodm5ldHclM2RvJTI2aHZxbXQlM2RlJTI2aHZibXQlM2RiZSUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2QlMjZodnRhcmdpZCUzZHBsYS00NTgzNzI2NTU1Nzg1ODQ0JTI2cHNjJTNkMQ&rlid=e121f50e89bc1eac4e5197c2a06cada1&ntb=1">buy now</a></td>
             </tr>
         </table>
-        <div class="footer">
+        <div id="footer">
             <p>Apple headquarters <br>
             One Apple Park Way, Cupertino, CA 95014 <br>
              Tel   +1 (408) 996-1010</p> 
+        </div>
+        <button onclick="changeFooter()" >change the footer </button>
+        <div class="message">
+            <textarea name="message board" id="type here" cols="10" rows="4"></textarea>
         </div>
         <script>
             function h1changed(){
             const changeH1 =document.getElementsByTagName("h1")[0];
             changeH1.innerHTML = "hello"
             }
+            
+
            function changBackgroundColor(){
             const background = document.body
             background.style.backgroundColor = "red"
            }
+           
            function changeFooter(){
-            const changedFooter = document.getElementsByClassName("footer");
-            changedFooter.innerHTML = "dbajdblwuixnhdcubfadbhaudhbaudxbhasudxb"
+            const changedFooter = document.getElementById("footer");
+            changedFooter.innerText = "dbajdblwuixnhdcubfadbhaudhbaudxbhasudxb"
            }
-           changeFooter()
+        
+           function changeLinksBackgroundColor(){
+            const changing = document.getElementsByClassName("links");
+         }
+
+        function toggleCssClass(){
+           const  toggling = document.getElementsByClassName("imges");
+           
+           for(imge of toggling){
+            imge.classList.add("visblity")
+            
+           }
+        }
+        toggleCssClass()
+        
+
+
+        
+
            
 
 
